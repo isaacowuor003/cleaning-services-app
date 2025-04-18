@@ -1,0 +1,30 @@
+Do you want me to help you write the entire frontend 
+page structure?
+
+Do you prefer I host this with Go as soon as it’s done?
+
+Will there be more pages (like Team, Services, 
+Booking, etc.), or just one-page scroll?
+
+Once frontend is done, we’ll start working on the 
+Go backend (e.g. form handling, database, booking 
+system, etc.).
+
+cleaning-services-app/
+├── frontend/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── style.css       # Tailwind input
+│   │   ├── js/
+│   │   └── images/
+│   │       └── hero.jpg        # (or whatever image you use)
+│   ├── output.css              # Tailwind output
+│   ├── index.html              # Home
+│   ├── team.html
+│   ├── services.html
+│   ├── pricelist.html
+│   ├── blog.html
+│   └── booking.html
+
+A folder called assets/images/ with your image 
+files (like logos, team photos)
