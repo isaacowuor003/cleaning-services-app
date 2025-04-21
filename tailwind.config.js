@@ -5,7 +5,8 @@ module.exports = {
     "./public/index.html",
     "./*.html",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}"
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./clean-site/**/*.html"
   ],
   theme: {
     extend: {},
