@@ -1,0 +1,250 @@
+/* Mobile and Responsive Styles */
+
+/* General responsive adjustments */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+    max-width: 1170px;
+  }
+  
+  /* Navigation adjustments */
+  .navigation-menu > .menu-item > a {
+    padding: 25px 8px;
+    font-size: 14px;
+  }
+}
+
+/* Large Devices (desktops, 992px to 1199px) */
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 970px;
+  }
+  
+  /* Navigation adjustments */
+  .navigation-menu > .menu-item > a {
+    font-size: 14px;
+    padding: 20px 5px;
+  }
+  
+  /* Header logo size adjustment */
+  header .siteLogo {
+    max-width: 180px;
+    margin-right: 10px;
+  }
+  
+  /* Dropdown menu width adjustment */
+  .navigation-menu > .menu-item.two-sections > .dropdown-menu {
+    width: 400px;
+  }
+  
+  .navigation-menu > .menu-item.one-section > .dropdown-menu {
+    width: 200px;
+  }
+}
+
+/* Medium Devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  /* Header adjustments */
+  header.sliding-nav {
+    height: 60px;
+  }
+  
+  header .siteLogo {
+    max-width: 160px;
+    margin-top: 12px;
+  }
+  
+  /* Team modal adjustments */
+  .teamDetails-Info .thumbPic {
+    width: 130px;
+    height: 130px;
+  }
+  
+  /* Career modal adjustments */
+  .mainApply h6 {
+    font-size: 20px;
+  }
+  
+  .carearApply span,
+  .carearApply input,
+  .label-input-file b,
+  .submitBtn-carear {
+    font-size: 14px;
+  }
+}
+
+/* Small Devices (landscape phones, 576px to 767px) */
+@media (max-width: 767px) {
+  /* Site loader */
+  .siteLoader {
+    display: none;
+  }
+  
+  /* Mobile navigation */
+  .hamburger-toggle {
+    display: block;
+  }
+  
+  .navigation-container {
+    display: none;
+    height: 100vh !important;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    z-index: 3;
+    background-color: #fff;
+    padding: 0 20px;
+  }
+  
+  .navigation-menu.navbar-nav {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .navigation-menu.navbar-nav > .menu-item {
+    width: 100%;
+    float: none;
+  }
+  
+  .navigation-menu.navbar-nav > .menu-item:first-child > a {
+    margin-top: 70px;
+    border-top: 1px solid #dedede;
+  }
+  
+  .navigation-menu.navbar-nav > .menu-item > a {
+    padding: 16px 0;
+    border-bottom: 1px solid #dedede;
+    line-height: 1em;
+  }
+  
+  .navigation-menu.navbar-nav > .menu-item > a .caret {
+    transform: rotate(45deg);
+    top: 27px;
+    border-color: #000;
+    position: absolute;
+    right: 5px;
+  }
+  
+  /* FullPage controls */
+  #actions {
+    display: none;
+  }
+  
+  /* Modal adjustments */
+  .cst-contact-Modal .modal-body {
+    max-width: 100%;
+    width: auto;
+    margin: 0 20px;
+    height: 500px;
+  }
+}
+
+/* Extra Small Devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  /* Modal adjustments */
+  .mainApply h6 {
+    font-size: 20px !important;
+  }
+  
+  .carearApply span,
+  .carearApply input,
+  .label-input-file b,
+  .submitBtn-carear {
+    font-size: 14px !important;
+  }
+  
+  .cst-contact-Modal .label-input-file b {
+    margin-left: 20px !important;
+  }
+  
+  .cst-contact-Modal .label-input-file {
+    width: 105px;
+  }
+  
+  .teamDetails-Info .thumbPic {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Adjust header logo on mobile */
+  header .siteLogo {
+    max-width: 140px;
+    margin-top: 10px;
+  }
+  
+  /* Adjust modal padding */
+  .aboutTeam-Modal .modal-content .modal-body {
+    padding: 10px;
+  }
+}
+
+/* Specific adjustments for mobile navigation */
+@media (max-width: 992px) {
+  /* Show hamburger menu */
+  .hamburger-toggle {
+    display: block;
+  }
+  
+  /* Navigation container */
+  .navigation-container {
+    display: none;
+  }
+  
+  /* Show navigation when open */
+  .navigation-container.open {
+    display: block;
+  }
+  
+  /* Allow scrolling on mobile navigation */
+  .navigation-menu.navbar-nav > .menu-item > .dropdown-menu {
+    height: auto;
+    padding-top: 0;
+    overflow-y: auto;
+  }
+  
+  /* Fix for contact link positioning */
+  a[title="Contact"] {
+    position: relative;
+    padding-left: 5px !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  header, footer, #actions, .hamburger-toggle {
+    display: none !important;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .fp-section, .fp-slide {
+    height: auto !important;
+  }
+  
+  .fp-tableCell {
+    display: block;
+    height: auto !important;
+  }
+}
+
